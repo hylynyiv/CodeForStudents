@@ -1,47 +1,48 @@
-// Variable and Datatypes
+// 1. Variables and Datatypes
 var myVar = 2
 let user = "Alice"
 let user2 = "Bob"
 const myPets = ["bird", "cat", "dog"]
 let isActive = false
 
-// Built-in Console.log Function
+// 2. Built-in Console.log Function
 console.log(myPets)
 
-// Functions
+// 3. Functions
 function hello (name) {
     console.log(name)
 }
 hello("Bob")
 hello(user);
 
-/// Simple DOM Manipulation
+/// 4. Simple DOM Manipulation
 document.body.innerHTML = user;
-//For-Loop
 
-// DOM Manipulation
-// 1. getElementById 
+// 5. For-Loop
 
-// 2. querySelector
+// 6. DOM Manipulation
+// getElementById 
 
-//3. createElement 
+// querySelector
 
-//4. appendChild 
+// createElement 
 
-//5. removeChild
+// appendChild 
 
-
-// EVENT HANDLERS 
+// removeChild
 
 
-// EVENT LISTENERS
+// 7. Event Handlers
 
 
-// Event Bubbling
+// 8. Event Listeners
 
 
-// Objects 
+// 9. Event Bubbling
 
 
-// FORMS
+// 10. Objects 
+
+
+// 11. Forms
 
