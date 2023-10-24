@@ -16,5 +16,5 @@ hello("Bob")
 hello(user);
 
 /// Simple DOM Manipulation
-document.body.innerHTML = user;
-// document.write(5+6)
+// document.body.innerHTML = user;
+document.write(5+6)
