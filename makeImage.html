@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="3" height="3"></canvas>
+    <button onclick="downloadImage()">Download JPEG</button>
+    <script>
+        // Get the canvas element and its context
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+      
+        // Define the colors for each pixel
+        const colors = [
+          'rgb(0,0,0)',       // Black
+          'rgb(255,0,0)',     // Red
+          'rgb(255,255,0)',   // Yellow
+          'rgb(0,255,0)',     // Green
+          'rgb(0,255,255)',   // Cyan
+          'rgb(0,0,255)',     // Blue
+          'rgb(255,0,255)',   // Magenta
+          'rgb(127,127,127)', // Gray
+          'rgb(255,255,255)'  // White
+        ];
+      
+        // Draw the 3x3 image on the canvas
+        function drawImage() {
+          let idx = 0;
+          for (let y = 0; y < 3; y++) {
+            for (let x = 0; x < 3; x++) {
+              ctx.fillStyle = colors[idx++];
+              ctx.fillRect(x, y, 1, 1); // Draw a 1x1 pixel at position (x, y)
+            }
+          }
+        }
+      
+        drawImage(); // Call the function to draw the image
+      
+        // Function to trigger the download of the canvas content as a JPEG file
+        function downloadImage() {
+          // Convert the canvas content to a data URL (JPEG format)
+          const dataUrl = canvas.toDataURL('image/jpeg', 1.0); // Second parameter is quality from 0 to 1
+      
+          // Create a temporary link element
+          const link = document.createElement('a');
+          link.href = dataUrl;
+          link.download = 'image.jpeg'; // Set the file name for the download
+      
+          // Trigger the download by clicking the link
+          document.body.appendChild(link);
+          link.click();
+      
+          // Clean up by removing the temporary link
+          document.body.removeChild(link);
+        }
+      </script>
+</body>
+</html>
