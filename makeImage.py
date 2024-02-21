@@ -1,9 +1,11 @@
+#install PIL with: 'pip install Pillow'
+
 from PIL import Image
 
 colors = [
     (0, 0, 0),       # Schwarz
-    (127, 127, 127),  # Grau
-    (255, 255, 255),  # Weiß
+    (127, 127, 127), # Grau
+    (255, 255, 255), # Weiß
     (255, 255, 0),   # Gelb
     (0, 255, 0),     # Grün
     (0, 255, 255),   # Türkis
@@ -27,7 +29,7 @@ img.putdata(colors)
 
 #img.save('3x3.jpeg', 'JPEG', quality=100, subsampling=0)
 
-#img.save('3x3.bmp')
+img.save('3x3.bmp')
 
-img.show()
+#img.show()
 
