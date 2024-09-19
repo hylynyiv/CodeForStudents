@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/myStyles.css">
+    <link rel="shortcut icon" href="img/Cat3.png" type="image/x-icon">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div id="logo">
+                <h1>Cat's <br>Daily</h1>
+                <img src="img/Cat2.jpeg" alt="" >
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="authors.html" target="_blank">authors</a></li>
+                <li><a href="contact.html" target="_blank">contact</a></li>
+                <li><a href="about.html"  target="_blank">about</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="formSection">
+
+        <form action="" id="contactForm">
+            <label for="message"> Your message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <label for="username"> Your name:</label>
+            <input type="text" id="username" name="username">
+
+            <label for="isCat">Are you a cat?</label>
+            <input type="radio" id="isCat" name="isCat" value="isCat">
+            <input type="submit" value="Submit">
+        </form>
+
+        <div class="container">
+            <div id="response"></div>
+        </div>
+
+    </section>
+
+    <script src="js/FormHandling.js"></script>
+    
+</body>
+</html>
+
+

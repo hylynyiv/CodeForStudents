@@ -1,0 +1,157 @@
+#img1{
+    float: left;
+}
+
+article {
+    clear: both;
+    margin: 10px;
+}
+
+img {
+    margin: 10px 10px 0px 0px;
+}
+
+header{
+    margin-left: 15px;
+    width: auto;
+    /* float: left; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+header img {
+    width:150px;
+    height: auto;
+    z-index: -10;
+    top: 10px;
+}
+
+header h1, header img  {
+    position: absolute; 
+    left: 10px;
+}
+
+header h1 {
+    top: 20px;
+    color: red;
+    text-transform: uppercase;
+    transform: rotate(-25deg);
+}
+
+nav {
+    width: 400px;
+    float:left;
+    margin-top: 20px;
+}
+nav a {
+    text-decoration:none;
+    color:red;
+}
+
+nav li {
+    float:left;
+    list-style:none;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 5px;
+    margin: 2px;
+}
+p{ 
+    /* width: 400px; */
+    margin: 5px;
+    /* float: left; */
+} 
+
+footer {
+    margin-top: 50px;
+    margin-bottom:20px;
+    margin-left: 10px;
+}
+button {
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    margin:5px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: url(../img/Cat3.png), auto !important;
+    color:rgb(204, 233, 160);
+    background-color: rgb(92, 80, 103);
+    clear: both;
+    float:right;
+    font-size: 10px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Centering our articles */
+
+section {
+    width: 100%;
+    margin-top: 150px;
+}
+
+article {
+    width: 800px;
+    max-width: 80%;
+    margin: auto;
+}
+
+/* ____ */
+
+#favFoods {
+    display: none;
+}
+
+form {
+    width: 500px;
+    max-width: 80%;
+    margin: auto;
+    /* display: flex;
+   flex-direction: column;
+    gap: 10px;  */
+}
+
+form label, form input {
+    width: 500px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#message {
+    height: 200px;
+    width: 500px;
+}
+
+input[type="text"]{
+    /* padding: 5px; */
+    color: rgb(106, 219, 86);
+}
+
+#submit {
+    width: 100px;
+    height:50px;
+}
+
+.container {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#response {
+    /* margin:auto; */
+}
+
+#Facts {
+    width: 500px;
+}
+#Facts h1 {
+    text-transform: uppercase;
+    color:rgb(204, 233, 160);
+}

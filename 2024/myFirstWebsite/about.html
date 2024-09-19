@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/myStyles.css">
+    <link rel="shortcut icon" href="img/Cat3.png" type="image/x-icon">
+    <title>My First Website</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div id="logo">
+                <h1>Cat's <br>Daily</h1>
+                <img src="img/Cat2.jpeg" alt="" >
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="authors.html" target="_blank">authors</a></li>
+                <li><a href="contact.html" target="_blank">contact</a></li>
+                <li><a href="about.html"  target="_blank">about</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <article id="Facts">
+            <h1>Random Cat Fact</h1>
+            <button id="getFact">Get a Cat Fact</button>
+            <p id="catFact"></p>
+        </article>
+    </section>
+
+<script>
+    // Function to fetch a random cat fact
+    async function fetchCatFact() {
+        const response = await fetch('https://catfact.ninja/fact');
+        const data = await response.json();
+        document.getElementById('catFact').textContent = data.fact;
+    }
+
+    // Set up event listener for button
+    document.getElementById('getFact').addEventListener('click', fetchCatFact);
+</script>
+
+<footer> Written with CatGPT4o</footer>
+    
+</body>
+</html>

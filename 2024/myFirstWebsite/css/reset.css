@@ -1,0 +1,73 @@
+/* 1. Reset margins and paddings for all elements */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Use border-box for consistent sizing */
+}
+
+/* 2. Set default body properties */
+body {
+    line-height: 1.5;
+    text-size-adjust: 100%; /* Prevent font size adjustments after orientation changes in iOS */
+    font-family: sans-serif; /* Set a default font */
+    background-color: white; /* Set a default background */
+    color: black; /* Set a default text color */
+}
+
+/* 3. Ensure all images and media are responsive */
+img,
+picture,
+video,
+canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 4. Remove list item styles */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 5. Ensure buttons and inputs have no inherited styles */
+button,
+input,
+select,
+textarea {
+    font: inherit; /* Use the same font settings as the parent element */
+}
+
+/* 6. Remove text decoration from links */
+a {
+    text-decoration: none;
+    color: inherit; /* Make links inherit their color */
+}
+
+/* 7. Normalize heading sizes and ensure a consistent vertical rhythm */
+/*h3, h4, h5, h6 {
+    font-size: inherit; /* Inherit font size for consistency */
+    /*font-weight: normal; /* Reset bold headings 
+}/*
+
+/* 8. Remove borders from fields */
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* 9. Ensure tables don't have spacing issues */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 10. Set a consistent box-sizing model for all elements */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
